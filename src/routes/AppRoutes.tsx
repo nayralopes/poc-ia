@@ -6,7 +6,7 @@ import { VehicleDetailPage } from '../modules/vehicles/pages/VehicleDetailPage';
 export function AppRoutes() {
   return (
     <BrowserRouter>
-      <div className="min-h-screen bg-gray-100">
+      <div className="min-h-screen bg-gray-50">
         <Header />
         <Routes>
           <Route path="/" element={<VehicleListPage />} />
