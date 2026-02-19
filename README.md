@@ -6,7 +6,7 @@ AutoMarket é um marketplace de veículos desenvolvido com React + Vite + TypeSc
 
 - [React](https://react.dev/) + [Vite](https://vitejs.dev/)
 - [TypeScript](https://www.typescriptlang.org/)
-- [TailwindCSS](https://tailwindcss.com/)
+- [Tailwind CSS](https://tailwindcss.com/)
 - [React Router](https://reactrouter.com/)
 - [Zustand](https://zustand-demo.pmnd.rs/) – estado global
 - [Axios](https://axios-http.com/) – cliente HTTP
