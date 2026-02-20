@@ -17,7 +17,7 @@ const fuelIcons: Record<Vehicle['fuel'], string> = {
 
 export function VehicleCard({ vehicle }: VehicleCardProps) {
   return (
-    <Link to={`/vehicles/${vehicle.id}`} className="block group focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded-2xl">
+    <Link to={`/vehicles/${vehicle.id}`} className="block group focus:outline-none focus-visible:ring-2 focus-visible:ring-green-500 rounded-2xl">
       <article className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300 flex flex-col h-full">
         {/* Image */}
         <div className="relative overflow-hidden">
@@ -35,7 +35,7 @@ export function VehicleCard({ vehicle }: VehicleCardProps) {
         {/* Content */}
         <div className="p-4 flex flex-col flex-1">
           {/* Title */}
-          <h3 className="text-base font-bold text-gray-900 leading-snug group-hover:text-blue-600 transition-colors">
+          <h3 className="text-base font-bold text-gray-900 leading-snug group-hover:text-green-600 transition-colors">
             {vehicle.brand} {vehicle.model}
           </h3>
           <p className="text-xs text-gray-500 mt-0.5 mb-3">
@@ -63,12 +63,12 @@ export function VehicleCard({ vehicle }: VehicleCardProps) {
           {/* Footer */}
           <div className="mt-auto flex items-end justify-between">
             <div>
-              <p className="text-2xl font-extrabold text-blue-600 leading-none">
+              <p className="text-2xl font-extrabold text-green-600 leading-none">
                 {formatCurrency(vehicle.price)}
               </p>
               <p className="text-xs text-gray-400 mt-0.5">Preço à vista</p>
             </div>
-            <span className="bg-blue-600 text-white text-xs font-semibold px-3 py-1.5 rounded-lg group-hover:bg-blue-700 transition-colors">
+            <span className="bg-green-600 text-white text-xs font-semibold px-3 py-1.5 rounded-lg group-hover:bg-green-700 transition-colors">
               Ver detalhes
             </span>
           </div>

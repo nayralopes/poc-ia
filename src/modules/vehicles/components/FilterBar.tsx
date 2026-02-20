@@ -24,7 +24,7 @@ export function FilterBar({ vehicles }: FilterBarProps) {
           <select
             value={filters.brand}
             onChange={(e) => setFilters({ brand: e.target.value })}
-            className="text-sm border border-gray-300 rounded-lg px-3 py-2 bg-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition cursor-pointer"
+            className="text-sm border border-gray-300 rounded-lg px-3 py-2 bg-white focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent transition cursor-pointer"
           >
             <option value="">Todas</option>
             {brands.map((b) => (
@@ -39,7 +39,7 @@ export function FilterBar({ vehicles }: FilterBarProps) {
           <select
             value={filters.year}
             onChange={(e) => setFilters({ year: e.target.value })}
-            className="text-sm border border-gray-300 rounded-lg px-3 py-2 bg-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition cursor-pointer"
+            className="text-sm border border-gray-300 rounded-lg px-3 py-2 bg-white focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent transition cursor-pointer"
           >
             <option value="">Todos</option>
             {years.map((y) => (
@@ -54,7 +54,7 @@ export function FilterBar({ vehicles }: FilterBarProps) {
           <select
             value={filters.fuel}
             onChange={(e) => setFilters({ fuel: e.target.value })}
-            className="text-sm border border-gray-300 rounded-lg px-3 py-2 bg-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition cursor-pointer"
+            className="text-sm border border-gray-300 rounded-lg px-3 py-2 bg-white focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent transition cursor-pointer"
           >
             <option value="">Todos</option>
             {fuels.map((f) => (
@@ -71,7 +71,7 @@ export function FilterBar({ vehicles }: FilterBarProps) {
             placeholder="R$ 0"
             value={filters.minPrice || ''}
             onChange={(e) => setFilters({ minPrice: Number(e.target.value) })}
-            className="text-sm border border-gray-300 rounded-lg px-3 py-2 bg-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition"
+            className="text-sm border border-gray-300 rounded-lg px-3 py-2 bg-white focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent transition"
           />
         </div>
 
@@ -82,7 +82,7 @@ export function FilterBar({ vehicles }: FilterBarProps) {
             placeholder="R$ 0"
             value={filters.maxPrice || ''}
             onChange={(e) => setFilters({ maxPrice: Number(e.target.value) })}
-            className="text-sm border border-gray-300 rounded-lg px-3 py-2 bg-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition"
+            className="text-sm border border-gray-300 rounded-lg px-3 py-2 bg-white focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent transition"
           />
         </div>
 
@@ -90,7 +90,7 @@ export function FilterBar({ vehicles }: FilterBarProps) {
         {hasActiveFilters && (
           <button
             onClick={resetFilters}
-            className="text-sm text-blue-600 font-medium hover:text-blue-800 transition-colors flex items-center gap-1 py-2"
+            className="text-sm text-green-600 font-medium hover:text-green-800 transition-colors flex items-center gap-1 py-2"
           >
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
